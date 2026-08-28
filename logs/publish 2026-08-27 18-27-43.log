@@ -1,0 +1,178 @@
+[2026.08.27 18:27:43][Info][Editor] ModCooker: Step Clean has been started!
+[2026.08.27 18:27:43][Info][Editor] ModCooker: Step Clean has finished!
+[2026.08.27 18:27:44][Info][Core] Reachability		 46.52 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.25 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 46.83 ms
+[2026.08.27 18:27:44][Info][Editor] ModCooker: Step Analyze has been started!
+[2026.08.27 18:27:44][Info][Editor] ModCooker: Step Analyze has finished!
+[2026.08.27 18:27:44][Info][Editor] ModCooker: Step CompileShaders has been started!
+[2026.08.27 18:27:44][Info][Editor] ModCooker: Step CompileShaders has finished!
+[2026.08.27 18:27:44][Info][WCC] Parsed seed list 'in memory', found 6 seed files to cook
+[2026.08.27 18:27:44][Info][WCC] Loading cooker data base...
+[2026.08.27 18:27:44][Warning][WCC] Failed to load existing cooking data base from 'd:\games\_modding\w3modding\redkit\projects\myproject\cooked\cook.db'. New one will be generated.
+[2026.08.27 18:27:44][Info][Cooker] Initializing texture cache...
+[2026.08.27 18:27:44][Info][WCC] Found 6 files in the initial cooking list
+[2026.08.27 18:27:44][Info][WCC] Start cooking gameplay\gui_new\actionscript\red\game\witcher3\menus\common_menu\menuplayerstats.as
+[2026.08.27 18:27:44][Error][WCC] Failed to load 'gameplay\gui_new\actionscript\red\game\witcher3\menus\common_menu\menuplayerstats.as' - is this a resource
+[2026.08.27 18:27:44][Error][WCC] Failed to cook 'gameplay\gui_new\actionscript\red\game\witcher3\menus\common_menu\menuplayerstats.as' !
+[2026.08.27 18:27:44][Info][WCC] Start cooking gameplay\gui_new\fla\witcher3\menus\common\menucommon.fla
+[2026.08.27 18:27:44][Error][WCC] Failed to load 'gameplay\gui_new\fla\witcher3\menus\common\menucommon.fla' - is this a resource
+[2026.08.27 18:27:44][Error][WCC] Failed to cook 'gameplay\gui_new\fla\witcher3\menus\common\menucommon.fla' !
+[2026.08.27 18:27:44][Info][WCC] Start cooking gameplay\gui_new\fla\witcher3\menus\inventory\menuinventory.fla
+[2026.08.27 18:27:44][Error][WCC] Failed to load 'gameplay\gui_new\fla\witcher3\menus\inventory\menuinventory.fla' - is this a resource
+[2026.08.27 18:27:44][Error][WCC] Failed to cook 'gameplay\gui_new\fla\witcher3\menus\inventory\menuinventory.fla' !
+[2026.08.27 18:27:44][Info][WCC] Start cooking gameplay\gui_new\fla\witcher3\menus\mapmenu\panel_worldmap.fla
+[2026.08.27 18:27:44][Error][WCC] Failed to load 'gameplay\gui_new\fla\witcher3\menus\mapmenu\panel_worldmap.fla' - is this a resource
+[2026.08.27 18:27:44][Error][WCC] Failed to cook 'gameplay\gui_new\fla\witcher3\menus\mapmenu\panel_worldmap.fla' !
+[2026.08.27 18:27:44][Info][WCC] Start cooking gameplay\gui_new\swf\common\panel_common.redswf
+[2026.08.27 18:27:44][Info][Gui] SWF file magic 'CFX.' (0x00584643)
+[2026.08.27 18:27:44][Info][TextureStreaming] Canceling texture streaming
+[2026.08.27 18:27:44][Info][TextureStreaming] Canceling texture streaming
+[2026.08.27 18:27:44][Info][TextureStreaming] Canceling texture streaming
+[2026.08.27 18:27:44][Info][TextureStreaming] Canceling texture streaming
+[2026.08.27 18:27:44][Info][WCC] Start cooking gameplay\gui_new\swf\common\panel_common.swf
+[2026.08.27 18:27:44][Info][WCC] Biggest BLAS size = 0 kb - ''
+[2026.08.27 18:27:44][Info][WCC] Cooker data base saved in 0.00s (6 entries, 0.00 MB)
+[2026.08.27 18:27:44][Info][WCC] Cooking finished in 0.04s
+[2026.08.27 18:27:44][Info][WCC] Cooked 6 files in total
+[2026.08.27 18:27:44][Info][WCC] Total loading time: 0.01s
+[2026.08.27 18:27:44][Info][WCC] Total saving time: 0.00s
+[2026.08.27 18:27:44][Info][WCC] Total cooking time: 0.00s (5 objects)
+[2026.08.27 18:27:44][Info][WCC] Per class cooking stats (2 classes):
+[2026.08.27 18:27:44][Info][WCC]   0.001s: CSwfTexture (4 objects)
+[2026.08.27 18:27:44][Info][WCC]   0.000s: CSwfResource (1 objects)
+[2026.08.27 18:27:44][Info][WCC] Cooker data base saved in 0.00s (6 entries, 0.00 MB)
+[2026.08.27 18:27:44][Info][Cooker] Flushing texture cache...
+[2026.08.27 18:27:44][Info][Editor] ModCooker: Step Cook has been started!
+[2026.08.27 18:27:44][Info][Editor] ModCooker: Step Cook has finished!
+[2026.08.27 18:27:44][Error][SoundModCooker] Fatal Error: WWISE installation not found, please install it from https://www.audiokinetic.com/
+ - The WWISE version must not be newer than 2021.1.14
+
+The Editor searches in these places (in this order):
+ - In the default installation folder: "C:\Program Files (x86)\Audiokinetic\Wwise..."
+ - In the system's PATH, as "WwiseCLI.exe" or "WwiseConsole.exe"
+ - In "tools\wwise\x64\Release\bin\WwiseCLI.exe"
+
+[2026.08.27 18:27:44][Info][Editor] ModCooker: Step CompileSounds has been started!
+[2026.08.27 18:27:44][Info][Editor] ModCooker: Step CompileSounds has finished!
+[2026.08.27 18:27:44][Info][Core] Reachability		 38.07 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.26 ms
+[2026.08.27 18:27:44][Info][Core] GC 100424->100419, 373 roots, 38.46 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 35.75 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.23 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 36.03 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 35.25 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.23 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 35.52 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 34.59 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.23 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 34.87 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 35.45 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.25 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 35.73 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 34.35 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.23 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 34.62 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 34.74 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.23 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 35.01 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 35.35 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.22 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 35.61 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 34.89 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.23 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 35.17 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 34.40 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.25 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 34.69 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 35.58 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.23 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 35.85 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 36.00 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.23 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 36.28 ms
+[2026.08.27 18:27:44][Info][Core] Reachability		 36.02 ms
+[2026.08.27 18:27:44][Info][Core] Collecting unreachables 0.25 ms
+[2026.08.27 18:27:44][Info][Core] GC 100419->100419, 373 roots, 36.31 ms
+[2026.08.27 18:27:45][Info][Core] Reachability		 37.44 ms
+[2026.08.27 18:27:45][Info][Core] Collecting unreachables 0.23 ms
+[2026.08.27 18:27:45][Info][Core] GC 100419->100419, 373 roots, 37.71 ms
+[2026.08.27 18:27:45][Info][Core] Reachability		 35.97 ms
+[2026.08.27 18:27:45][Info][Core] Collecting unreachables 0.25 ms
+[2026.08.27 18:27:45][Info][Core] GC 100419->100419, 373 roots, 36.26 ms
+[2026.08.27 18:27:45][Info][Core] Reachability		 36.90 ms
+[2026.08.27 18:27:45][Info][Core] Collecting unreachables 0.25 ms
+[2026.08.27 18:27:45][Info][Core] GC 100419->100419, 373 roots, 37.22 ms
+[2026.08.27 18:27:45][Info][Core] Reachability		 36.59 ms
+[2026.08.27 18:27:45][Info][Core] Collecting unreachables 0.24 ms
+[2026.08.27 18:27:45][Info][Core] GC 100419->100419, 373 roots, 36.87 ms
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step CompileSpeech has been started!
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step CompileSpeech has finished!
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step VerifyAndCopy has been started!
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step VerifyAndCopy has finished!
+[2026.08.27 18:27:45][Info][WCC] Loading cooker data base...
+[2026.08.27 18:27:45][Info][WCC] Parsing cooker data base...
+[2026.08.27 18:27:45][Info][WCC] Parsed 6 existing entries from cooker data base in 0.00s
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step CollisionCache has been started!
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step CollisionCache has finished!
+[2026.08.27 18:27:45][Info][WCC] Loading cooker data base...
+[2026.08.27 18:27:45][Info][WCC] Parsing cooker data base...
+[2026.08.27 18:27:45][Info][WCC] Parsed 6 existing entries from cooker data base in 0.00s
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step TextureCache has been started!
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step TextureCache has finished!
+[2026.08.27 18:27:45][Info][WCC] Compressing 'gameplay\gui_new\swf\common\panel_common.redswf'...
+[2026.08.27 18:27:45][Info][WCC] Compressing 'gameplay\gui_new\swf\common\panel_common.swf'...
+[2026.08.27 18:27:45][Error][WCC] Compression of file 'd:\games\_modding\w3modding\redkit\projects\myproject\cooked\gameplay\gui_new\swf\common\panel_common.swf' failed for some reason. Storing as uncompressed.
+[2026.08.27 18:27:45][Info][WCC] Bundle 'd:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\blob0.bundle' saved, 2 files, 1644.00 KB of data
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step CreateBundles has been started!
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step CreateBundles has finished!
+[2026.08.27 18:27:45][Info][WCC] Loaded 1 bundles with 2 entries
+[2026.08.27 18:27:45][Info][WCC] Ignored censorship for 0 files
+[2026.08.27 18:27:45][Info][WCC] Analyzing buffers....
+[2026.08.27 18:27:45][Info][WCC] Number of buffers: 0
+[2026.08.27 18:27:45][Info][WCC] Number of files with buffers: 0
+[2026.08.27 18:27:45][Info][WCC] Max buffer ID: 0
+[2026.08.27 18:27:45][Info][Core] Found 5 directories in bundle file mapping (2 files)
+[2026.08.27 18:27:45][Info][Core] Used 0.03KB for directory names
+[2026.08.27 18:27:45][Info][Core] Used 0.00KB for file names
+[2026.08.27 18:27:45][Info][WCC] Exported 0.13 KB of text (discardable)
+[2026.08.27 18:27:45][Info][WCC] Exported 1 bundles (0.05 KB)
+[2026.08.27 18:27:45][Info][WCC] Exported 2 entries (0.06 KB)
+[2026.08.27 18:27:45][Info][WCC] Exported 2 files (0.09 KB)
+[2026.08.27 18:27:45][Info][WCC] Created 0 buffers (0.00 KB)
+[2026.08.27 18:27:45][Info][WCC] Created 0.09 KB in initialization data
+[2026.08.27 18:27:45][Info][WCC]   Bundle blob0.bundle:
+[2026.08.27 18:27:45][Info][WCC]     NumEntries: 2
+[2026.08.27 18:27:45][Info][WCC]     NumBuffers: 0
+[2026.08.27 18:27:45][Info][WCC]     NumResources: 2 (0 owning buffers)
+[2026.08.27 18:27:45][Info][WCC]     TotalDataSize: 1637.77 KB
+[2026.08.27 18:27:45][Info][WCC]     BurstDataSize: 1643.34 KB
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC] -- Per extension stats for normal files
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC]    redswf: 1 files, 1.75 MB -> 0.72 MB (ratio: 0.410)
+[2026.08.27 18:27:45][Info][WCC]    swf: 1 files, 0.88 MB -> 0.88 MB (ratio: 1.000)
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC] -- Compression statistics for redswf
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC]   lz4hc: 1 files, 1.75MB -> 0.72MB (ratio: 0.410)
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC] -- Compression statistics for swf
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC]    none: 1 files, 0.88MB -> 0.88MB (ratio: 1.000)
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC] -- Per extension stats for buffer files
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC] -- Compression statistics for totals
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Info][WCC]    none: 1 files, 0.88MB -> 0.88MB (ratio: 1.000)
+[2026.08.27 18:27:45][Info][WCC]   lz4hc: 1 files, 1.75MB -> 0.72MB (ratio: 0.410)
+[2026.08.27 18:27:45][Info][WCC] -------------------------------------------------------
+[2026.08.27 18:27:45][Error][Editor] Could not remove directory: 'd:\games\_modding\w3modding\redkit\projects\myproject\packed\dlc\'
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step CreateMetadataStores has been started!
+[2026.08.27 18:27:45][Info][Editor] ModCooker: Step CreateMetadataStores has finished!
