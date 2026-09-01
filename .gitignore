@@ -1,0 +1,7 @@
+# REDkit generated outputs
+/cooked/
+/packed/
+
+# Manual local backups; Git history is the backup.
+* - backup.*
+*.before-*.fla
