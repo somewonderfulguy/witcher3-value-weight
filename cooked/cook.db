@@ -4651,37 +4651,63 @@
             "id": "63C111A6-A2E5563F-0E73B3D6-021AC89F"
         },
         {
-            "path": "gameplay\\gui_new\\fla\\witcher3\\menus\\common\\menucommon.fla",
+            "path": "gameplay\\gui_new\\fla\\witcher3\\menus\\common\\componentslib - backup.fla",
             "level": 0,
             "seed": 1,
-            "id": "56305D8A-079F572E-95E3462F-8F80B839"
+            "id": "FA80968D-08380FB5-98C132D7-AB0E6E0C"
         },
         {
-            "path": "gameplay\\gui_new\\fla\\witcher3\\menus\\inventory\\menuinventory.fla",
+            "path": "gameplay\\gui_new\\fla\\witcher3\\menus\\common\\componentslib.before-times-font-fix-20260901-202538.fla",
             "level": 0,
             "seed": 1,
-            "id": "78679DEE-9A5748B5-21B7D03C-DDA209DD"
+            "id": "F304506A-C302F152-CA848E50-D7CB3D79"
         },
         {
-            "path": "gameplay\\gui_new\\fla\\witcher3\\menus\\mapmenu\\panel_worldmap.fla",
+            "path": "gameplay\\gui_new\\fla\\witcher3\\menus\\common\\componentslib.before-times-font-fix.fla",
             "level": 0,
             "seed": 1,
-            "id": "FE094056-8984103F-610D7A96-ABA4EEDD"
+            "id": "95FF7C7C-6F9EC1A4-6AED63B3-2C3D53F3"
         },
         {
-            "path": "gameplay\\gui_new\\swf\\common\\panel_common.redswf",
+            "path": "gameplay\\gui_new\\fla\\witcher3\\menus\\common\\componentslib.fla",
+            "level": 0,
+            "seed": 1,
+            "id": "C49490C9-F915DCA8-9C2A22D2-31317B6B"
+        },
+        {
+            "path": "gameplay\\gui_new\\icons\\valueweight\\vw_test.png",
+            "level": 0,
+            "seed": 1,
+            "consumed": 1,
+            "id": "A9046C8F-B913D774-FE41E470-513B3239"
+        },
+        {
+            "path": "gameplay\\gui_new\\swf\\common\\componentslib.redswf",
             "level": 0,
             "class": "CSwfResource",
             "seed": 1,
-            "id": "F76DC497-69F9674C-95FFE745-7F1BA3D1",
-            "diskSize": 1870845
+            "id": "0C4FC8DE-3B508C5A-B3433E92-6D3E8CE8",
+            "diskSize": 1207598
         },
         {
-            "path": "gameplay\\gui_new\\swf\\common\\panel_common.swf",
+            "path": "gameplay\\gui_new\\swf\\common\\componentslib.swf",
             "level": 0,
             "seed": 1,
-            "id": "0FD1AE8D-9BAD2584-3CB77446-CFA460E1",
-            "diskSize": 962333
+            "id": "C6868D1C-7F0AF0EB-530E4FD8-A962DDFF",
+            "diskSize": 728479
+        },
+        {
+            "path": "gameplay\\gui_new\\swf\\common\\gfxfontlib.swf",
+            "level": 0,
+            "seed": 1,
+            "id": "AF99B3AF-D1F76BF0-253FDD34-AE99019F",
+            "diskSize": 68793
+        },
+        {
+            "path": "scripts\\game\\gui\\_old\\components\\guitooltipcomponent.ws",
+            "level": 0,
+            "seed": 1,
+            "id": "4776410A-1A971FBA-686DFC86-770D718D"
         }
     ]
 }
