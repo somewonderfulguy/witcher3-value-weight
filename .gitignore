@@ -5,3 +5,7 @@
 # Manual local backups; Git history is the backup.
 * - backup.*
 *.before-*.fla
+
+# Temporary files
+/tmp/
+/temp/
