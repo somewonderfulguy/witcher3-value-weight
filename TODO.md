@@ -2,15 +2,15 @@
 
 ## Release 1.0
 
-- [ ] Add merge instructions?
+- [x] Add merge instructions?
 - [x] Fix wrong calculation for `Price / Weight` sorting (if possible). Skipped.
-- [] Undo "All" in fonts export in Adobe Animate. Skipped.
+- [x] Undo "All" in fonts export in Adobe Animate.
 
 - [x] Add inventory sorting by `Price / Weight`. Done.
   - Add a new sorting dialog item named `Price / Weight`.
   - First implementation can use plain English text without localization.
   - Confirm behavior for zero-weight and zero-price items.
-- [ ] Add localization for `Price / Weight` and `N/A`.
+- [x] Add localization for `Price / Weight` and `N/A`.
   - English
   - Ukrainian
   - Polish
@@ -36,6 +36,8 @@
   - Install/uninstall notes.
   - Compatibility notes.
   - Links to Nexus Mods and Steam Workshop after publication.
+- [ ] Learn how to make video with text and zoom effects.
+- [ ] Create a tutorial video for the mod.
 - [ ] Prepare Nexus Mods release.
   - Add polished screenshots.
   - Write description.
