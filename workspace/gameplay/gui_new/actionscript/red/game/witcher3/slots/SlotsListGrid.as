@@ -1285,9 +1285,11 @@ package red.game.witcher3.slots
 		
 		protected function getValueWeightRatio(element:ItemDataStub):Number
 		{
-			if (element.weight > 0)
+			var weight:Number = Math.round(element.weight * 100) / 100;
+			
+			if (weight > 0)
 			{
-				return element.price / element.weight;
+				return element.price / weight;
 			}
 			
 			if (element.price > 0)
