@@ -1,0 +1,450 @@
+[2026.09.13 17:58:44][Info][Editor] ModCooker: Step Clean has been started!
+[2026.09.13 17:58:44][Info][Editor] ModCooker: Step Clean has finished!
+[2026.09.13 17:58:44][Info][Core] Reachability		 41.17 ms
+[2026.09.13 17:58:44][Info][Core] Collecting unreachables 0.29 ms
+[2026.09.13 17:58:44][Info][Core] GC 105404->100368, 322 roots, 64.81 ms
+[2026.09.13 17:58:44][Info][Editor] ModCooker: Step Analyze has been started!
+[2026.09.13 17:58:44][Info][Editor] ModCooker: Step Analyze has finished!
+[2026.09.13 17:58:44][Info][Editor] ModCooker: Step CompileShaders has been started!
+[2026.09.13 17:58:44][Info][Editor] ModCooker: Step CompileShaders has finished!
+[2026.09.13 17:58:44][Info][WCC] Parsed seed list 'in memory', found 10 seed files to cook
+[2026.09.13 17:58:44][Info][WCC] Loading cooker data base...
+[2026.09.13 17:58:44][Warning][WCC] Failed to load existing cooking data base from 'd:\games\_modding\w3modding\redkit\projects\myproject\cooked\cook.db'. New one will be generated.
+[2026.09.13 17:58:44][Info][Cooker] Initializing texture cache...
+[2026.09.13 17:58:44][Info][WCC] Found 10 files in the initial cooking list
+[2026.09.13 17:58:44][Info][WCC] Start cooking gameplay\gui_new\actionscript\red\game\witcher3\menus\inventory_menu\menuinventory.as
+[2026.09.13 17:58:44][Warning][Core] File magic is invalid (70BFBBEF != 57325243), file is not a resource.
+[2026.09.13 17:58:44][Error][Core] Dynamic class resolve for resource 'gameplay\gui_new\actionscript\red\game\witcher3\menus\inventory_menu\menuinventory.as' failed!'
+[2026.09.13 17:58:44][Warning][Core] File magic is invalid (70BFBBEF != 57325243), file is not a resource.
+[2026.09.13 17:58:44][Error][Core] Deserialization failure in file 'gameplay\gui_new\actionscript\red\game\witcher3\menus\inventory_menu\menuinventory.as'
+[2026.09.13 17:58:44][Error][Core] !!! LOADING FAILED !!! 
+[2026.09.13 17:58:44][Error][Core] Unable to load 'gameplay\gui_new\actionscript\red\game\witcher3\menus\inventory_menu\menuinventory.as' 
+[2026.09.13 17:58:44][Error][WCC] Failed to load 'gameplay\gui_new\actionscript\red\game\witcher3\menus\inventory_menu\menuinventory.as' - is this a resource
+[2026.09.13 17:58:44][Error][WCC] Failed to cook 'gameplay\gui_new\actionscript\red\game\witcher3\menus\inventory_menu\menuinventory.as' !
+[2026.09.13 17:58:44][Info][WCC] Start cooking gameplay\gui_new\actionscript\red\game\witcher3\slots\slotslistgrid.as
+[2026.09.13 17:58:44][Warning][Core] File magic is invalid (2FBFBBEF != 57325243), file is not a resource.
+[2026.09.13 17:58:44][Error][Core] Dynamic class resolve for resource 'gameplay\gui_new\actionscript\red\game\witcher3\slots\slotslistgrid.as' failed!'
+[2026.09.13 17:58:44][Warning][Core] File magic is invalid (2FBFBBEF != 57325243), file is not a resource.
+[2026.09.13 17:58:44][Error][Core] Deserialization failure in file 'gameplay\gui_new\actionscript\red\game\witcher3\slots\slotslistgrid.as'
+[2026.09.13 17:58:44][Error][Core] !!! LOADING FAILED !!! 
+[2026.09.13 17:58:44][Error][Core] Unable to load 'gameplay\gui_new\actionscript\red\game\witcher3\slots\slotslistgrid.as' 
+[2026.09.13 17:58:44][Error][WCC] Failed to load 'gameplay\gui_new\actionscript\red\game\witcher3\slots\slotslistgrid.as' - is this a resource
+[2026.09.13 17:58:44][Error][WCC] Failed to cook 'gameplay\gui_new\actionscript\red\game\witcher3\slots\slotslistgrid.as' !
+[2026.09.13 17:58:44][Info][WCC] Start cooking gameplay\gui_new\fla\witcher3\menus\common\componentslib.before-runtime-font-restore.fla
+[2026.09.13 17:58:44][Warning][Core] File magic is invalid (04034B50 != 57325243), file is not a resource.
+[2026.09.13 17:58:44][Error][Core] Dynamic class resolve for resource 'gameplay\gui_new\fla\witcher3\menus\common\componentslib.before-runtime-font-restore.fla' failed!'
+[2026.09.13 17:58:44][Warning][Core] File magic is invalid (04034B50 != 57325243), file is not a resource.
+[2026.09.13 17:58:44][Error][Core] Deserialization failure in file 'gameplay\gui_new\fla\witcher3\menus\common\componentslib.before-runtime-font-restore.fla'
+[2026.09.13 17:58:44][Error][Core] !!! LOADING FAILED !!! 
+[2026.09.13 17:58:44][Error][Core] Unable to load 'gameplay\gui_new\fla\witcher3\menus\common\componentslib.before-runtime-font-restore.fla' 
+[2026.09.13 17:58:44][Error][WCC] Failed to load 'gameplay\gui_new\fla\witcher3\menus\common\componentslib.before-runtime-font-restore.fla' - is this a resource
+[2026.09.13 17:58:44][Error][WCC] Failed to cook 'gameplay\gui_new\fla\witcher3\menus\common\componentslib.before-runtime-font-restore.fla' !
+[2026.09.13 17:58:44][Info][WCC] Start cooking gameplay\gui_new\fla\witcher3\menus\common\componentslib.fla
+[2026.09.13 17:58:44][Warning][Core] File magic is invalid (04034B50 != 57325243), file is not a resource.
+[2026.09.13 17:58:44][Error][Core] Dynamic class resolve for resource 'gameplay\gui_new\fla\witcher3\menus\common\componentslib.fla' failed!'
+[2026.09.13 17:58:44][Warning][Core] File magic is invalid (04034B50 != 57325243), file is not a resource.
+[2026.09.13 17:58:44][Error][Core] Deserialization failure in file 'gameplay\gui_new\fla\witcher3\menus\common\componentslib.fla'
+[2026.09.13 17:58:44][Error][Core] !!! LOADING FAILED !!! 
+[2026.09.13 17:58:44][Error][Core] Unable to load 'gameplay\gui_new\fla\witcher3\menus\common\componentslib.fla' 
+[2026.09.13 17:58:44][Error][WCC] Failed to load 'gameplay\gui_new\fla\witcher3\menus\common\componentslib.fla' - is this a resource
+[2026.09.13 17:58:44][Error][WCC] Failed to cook 'gameplay\gui_new\fla\witcher3\menus\common\componentslib.fla' !
+[2026.09.13 17:58:44][Info][WCC] Start cooking gameplay\gui_new\fla\witcher3\menus\inventory\menuinventory.fla
+[2026.09.13 17:58:44][Warning][Core] File magic is invalid (04034B50 != 57325243), file is not a resource.
+[2026.09.13 17:58:44][Error][Core] Dynamic class resolve for resource 'gameplay\gui_new\fla\witcher3\menus\inventory\menuinventory.fla' failed!'
+[2026.09.13 17:58:44][Warning][Core] File magic is invalid (04034B50 != 57325243), file is not a resource.
+[2026.09.13 17:58:44][Error][Core] Deserialization failure in file 'gameplay\gui_new\fla\witcher3\menus\inventory\menuinventory.fla'
+[2026.09.13 17:58:44][Error][Core] !!! LOADING FAILED !!! 
+[2026.09.13 17:58:44][Error][Core] Unable to load 'gameplay\gui_new\fla\witcher3\menus\inventory\menuinventory.fla' 
+[2026.09.13 17:58:44][Error][WCC] Failed to load 'gameplay\gui_new\fla\witcher3\menus\inventory\menuinventory.fla' - is this a resource
+[2026.09.13 17:58:44][Error][WCC] Failed to cook 'gameplay\gui_new\fla\witcher3\menus\inventory\menuinventory.fla' !
+[2026.09.13 17:58:44][Info][WCC] Start cooking gameplay\gui_new\swf\common\componentslib.redswf
+[2026.09.13 17:58:44][Info][Gui] SWF file magic 'CFX.' (0x00584643)
+[2026.09.13 17:58:44][Info][TextureStreaming] Canceling texture streaming
+[2026.09.13 17:58:44][Info][TextureStreaming] Canceling texture streaming
+[2026.09.13 17:58:44][Info][WCC] Start cooking gameplay\gui_new\swf\common\componentslib.swf
+[2026.09.13 17:58:44][Info][WCC] Start cooking gameplay\gui_new\swf\inventory\panel_inventory.redswf
+[2026.09.13 17:58:44][Info][Gui] SWF file magic 'CFX.' (0x00584643)
+[2026.09.13 17:58:44][Info][TextureStreaming] Canceling texture streaming
+[2026.09.13 17:58:44][Info][TextureStreaming] Canceling texture streaming
+[2026.09.13 17:58:44][Info][TextureStreaming] Canceling texture streaming
+[2026.09.13 17:58:44][Info][TextureStreaming] Canceling texture streaming
+[2026.09.13 17:58:44][Info][TextureStreaming] Canceling texture streaming
+[2026.09.13 17:58:44][Info][WCC] Start cooking gameplay\gui_new\swf\inventory\panel_inventory.swf
+[2026.09.13 17:58:45][Info][WCC] Start cooking scripts\game\gui\_old\components\guitooltipcomponent.ws
+[2026.09.13 17:58:45][Warning][Core] File magic is invalid (002FFEFF != 57325243), file is not a resource.
+[2026.09.13 17:58:45][Error][Core] Dynamic class resolve for resource 'scripts\game\gui\_old\components\guitooltipcomponent.ws' failed!'
+[2026.09.13 17:58:45][Warning][Core] File magic is invalid (002FFEFF != 57325243), file is not a resource.
+[2026.09.13 17:58:45][Error][Core] Deserialization failure in file 'scripts\game\gui\_old\components\guitooltipcomponent.ws'
+[2026.09.13 17:58:45][Error][Core] !!! LOADING FAILED !!! 
+[2026.09.13 17:58:45][Error][Core] Unable to load 'scripts\game\gui\_old\components\guitooltipcomponent.ws' 
+[2026.09.13 17:58:45][Error][WCC] Failed to load 'scripts\game\gui\_old\components\guitooltipcomponent.ws' - is this a resource
+[2026.09.13 17:58:45][Error][WCC] Failed to cook 'scripts\game\gui\_old\components\guitooltipcomponent.ws' !
+[2026.09.13 17:58:45][Info][WCC] Biggest BLAS size = 0 kb - ''
+[2026.09.13 17:58:45][Info][WCC] Cooker data base saved in 0.00s (10 entries, 0.00 MB)
+[2026.09.13 17:58:45][Info][WCC] Cooking finished in 0.15s
+[2026.09.13 17:58:45][Info][WCC] Cooked 10 files in total
+[2026.09.13 17:58:45][Info][WCC] Total loading time: 0.06s
+[2026.09.13 17:58:45][Info][WCC] Total saving time: 0.01s
+[2026.09.13 17:58:45][Info][WCC] Total cooking time: 0.00s (9 objects)
+[2026.09.13 17:58:45][Info][WCC] Per class cooking stats (2 classes):
+[2026.09.13 17:58:45][Info][WCC]   0.002s: CSwfTexture (7 objects)
+[2026.09.13 17:58:45][Info][WCC]   0.001s: CSwfResource (2 objects)
+[2026.09.13 17:58:45][Info][WCC] Cooker data base saved in 0.00s (10 entries, 0.00 MB)
+[2026.09.13 17:58:45][Info][Cooker] Flushing texture cache...
+[2026.09.13 17:58:45][Info][Editor] ModCooker: Step Cook has been started!
+[2026.09.13 17:58:45][Info][Editor] ModCooker: Step Cook has finished!
+[2026.09.13 17:58:45][Error][SoundModCooker] Fatal Error: WWISE installation not found, please install it from https://www.audiokinetic.com/
+ - The WWISE version must not be newer than 2021.1.14
+
+The Editor searches in these places (in this order):
+ - In the default installation folder: "C:\Program Files (x86)\Audiokinetic\Wwise..."
+ - In the system's PATH, as "WwiseCLI.exe" or "WwiseConsole.exe"
+ - In "tools\wwise\x64\Release\bin\WwiseCLI.exe"
+
+[2026.09.13 17:58:45][Info][Editor] ModCooker: Step CompileSounds has been started!
+[2026.09.13 17:58:45][Info][Editor] ModCooker: Step CompileSounds has finished!
+[2026.09.13 17:58:49][Info][Editor] Cooking 'en' strings...
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\en.w3strings file created.
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'en' strings!
+[2026.09.13 17:58:49][Info][Editor] Cooking 'en' speech...
+[2026.09.13 17:58:49][Info][Core] Reachability		 37.52 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:49][Info][Core] GC 100383->100368, 322 roots, 37.91 ms
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\enpc.w3speech has not changed.
+[2026.09.13 17:58:49][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'en' speech!
+[2026.09.13 17:58:49][Info][Core] Reachability		 35.19 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.21 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 35.44 ms
+[2026.09.13 17:58:49][Info][Editor] Cooking 'pl' strings...
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\pl.w3strings file created.
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'pl' strings!
+[2026.09.13 17:58:49][Info][Editor] Cooking 'pl' speech...
+[2026.09.13 17:58:49][Info][Core] Reachability		 35.15 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 35.42 ms
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\plpc.w3speech has not changed.
+[2026.09.13 17:58:49][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'pl' speech!
+[2026.09.13 17:58:49][Info][Core] Reachability		 36.49 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.24 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 36.76 ms
+[2026.09.13 17:58:49][Info][Editor] Cooking 'de' strings...
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\de.w3strings file created.
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'de' strings!
+[2026.09.13 17:58:49][Info][Editor] Cooking 'de' speech...
+[2026.09.13 17:58:49][Info][Core] Reachability		 35.21 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 35.48 ms
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\depc.w3speech has not changed.
+[2026.09.13 17:58:49][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'de' speech!
+[2026.09.13 17:58:49][Info][Core] Reachability		 34.24 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 34.51 ms
+[2026.09.13 17:58:49][Info][Editor] Cooking 'fr' strings...
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\fr.w3strings file created.
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'fr' strings!
+[2026.09.13 17:58:49][Info][Editor] Cooking 'fr' speech...
+[2026.09.13 17:58:49][Info][Core] Reachability		 36.44 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 36.72 ms
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\frpc.w3speech has not changed.
+[2026.09.13 17:58:49][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'fr' speech!
+[2026.09.13 17:58:49][Info][Core] Reachability		 34.99 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.26 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 35.30 ms
+[2026.09.13 17:58:49][Info][Editor] Cooking 'cz' strings...
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\cz.w3strings file created.
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'cz' strings!
+[2026.09.13 17:58:49][Info][Editor] Cooking 'cz' speech...
+[2026.09.13 17:58:49][Info][Core] Reachability		 34.50 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.24 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 34.77 ms
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\czpc.w3speech has not changed.
+[2026.09.13 17:58:49][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'cz' speech!
+[2026.09.13 17:58:49][Info][Core] Reachability		 34.84 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 35.10 ms
+[2026.09.13 17:58:49][Info][Editor] Cooking 'es' strings...
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\es.w3strings file created.
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'es' strings!
+[2026.09.13 17:58:49][Info][Editor] Cooking 'es' speech...
+[2026.09.13 17:58:49][Info][Core] Reachability		 36.16 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 36.43 ms
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\espc.w3speech has not changed.
+[2026.09.13 17:58:49][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'es' speech!
+[2026.09.13 17:58:49][Info][Core] Reachability		 34.53 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.24 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 34.80 ms
+[2026.09.13 17:58:49][Info][Editor] Cooking 'esmx' strings...
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\esmx.w3strings file created.
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'esmx' strings!
+[2026.09.13 17:58:49][Info][Editor] Cooking 'esmx' speech...
+[2026.09.13 17:58:49][Info][Core] Reachability		 34.96 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.24 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 35.26 ms
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\esmxpc.w3speech has not changed.
+[2026.09.13 17:58:49][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'esmx' speech!
+[2026.09.13 17:58:49][Info][Core] Reachability		 36.02 ms
+[2026.09.13 17:58:49][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:49][Info][Core] GC 100368->100368, 322 roots, 36.29 ms
+[2026.09.13 17:58:49][Info][Editor] Cooking 'hu' strings...
+[2026.09.13 17:58:49][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\hu.w3strings file created.
+[2026.09.13 17:58:49][Info][Editor] Done cooking 'hu' strings!
+[2026.09.13 17:58:49][Info][Editor] Cooking 'hu' speech...
+[2026.09.13 17:58:50][Info][Core] Reachability		 34.78 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 35.05 ms
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\hupc.w3speech has not changed.
+[2026.09.13 17:58:50][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'hu' speech!
+[2026.09.13 17:58:50][Info][Core] Reachability		 34.58 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 34.85 ms
+[2026.09.13 17:58:50][Info][Editor] Cooking 'it' strings...
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\it.w3strings file created.
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'it' strings!
+[2026.09.13 17:58:50][Info][Editor] Cooking 'it' speech...
+[2026.09.13 17:58:50][Info][Core] Reachability		 35.88 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.24 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 36.20 ms
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\itpc.w3speech has not changed.
+[2026.09.13 17:58:50][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'it' speech!
+[2026.09.13 17:58:50][Info][Core] Reachability		 34.96 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.22 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 35.21 ms
+[2026.09.13 17:58:50][Info][Editor] Cooking 'ru' strings...
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\ru.w3strings file created.
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'ru' strings!
+[2026.09.13 17:58:50][Info][Editor] Cooking 'ru' speech...
+[2026.09.13 17:58:50][Info][Core] Reachability		 34.87 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 35.13 ms
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\rupc.w3speech has not changed.
+[2026.09.13 17:58:50][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'ru' speech!
+[2026.09.13 17:58:50][Info][Core] Reachability		 38.00 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.24 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 38.28 ms
+[2026.09.13 17:58:50][Info][Editor] Cooking 'zh' strings...
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\zh.w3strings file created.
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'zh' strings!
+[2026.09.13 17:58:50][Info][Editor] Cooking 'zh' speech...
+[2026.09.13 17:58:50][Info][Core] Reachability		 38.12 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 38.39 ms
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\zhpc.w3speech has not changed.
+[2026.09.13 17:58:50][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'zh' speech!
+[2026.09.13 17:58:50][Info][Core] Reachability		 34.71 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 34.98 ms
+[2026.09.13 17:58:50][Info][Editor] Cooking 'ar' strings...
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\ar.w3strings file created.
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'ar' strings!
+[2026.09.13 17:58:50][Info][Editor] Cooking 'ar' speech...
+[2026.09.13 17:58:50][Info][Core] Reachability		 35.61 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 35.88 ms
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\arpc.w3speech has not changed.
+[2026.09.13 17:58:50][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'ar' speech!
+[2026.09.13 17:58:50][Info][Core] Reachability		 35.76 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 36.03 ms
+[2026.09.13 17:58:50][Info][Editor] Cooking 'br' strings...
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\br.w3strings file created.
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'br' strings!
+[2026.09.13 17:58:50][Info][Editor] Cooking 'br' speech...
+[2026.09.13 17:58:50][Info][Core] Reachability		 35.11 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 35.38 ms
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\brpc.w3speech has not changed.
+[2026.09.13 17:58:50][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'br' speech!
+[2026.09.13 17:58:50][Info][Core] Reachability		 35.05 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 35.32 ms
+[2026.09.13 17:58:50][Info][Editor] Cooking 'tr' strings...
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\tr.w3strings file created.
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'tr' strings!
+[2026.09.13 17:58:50][Info][Editor] Cooking 'tr' speech...
+[2026.09.13 17:58:50][Info][Core] Reachability		 36.72 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 36.99 ms
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\trpc.w3speech has not changed.
+[2026.09.13 17:58:50][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'tr' speech!
+[2026.09.13 17:58:50][Info][Core] Reachability		 34.72 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.21 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 34.97 ms
+[2026.09.13 17:58:50][Info][Editor] Cooking 'cn' strings...
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\cn.w3strings file created.
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'cn' strings!
+[2026.09.13 17:58:50][Info][Editor] Cooking 'cn' speech...
+[2026.09.13 17:58:50][Info][Core] Reachability		 35.21 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 35.47 ms
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\cnpc.w3speech has not changed.
+[2026.09.13 17:58:50][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'cn' speech!
+[2026.09.13 17:58:50][Info][Core] Reachability		 35.04 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.24 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 35.33 ms
+[2026.09.13 17:58:50][Info][Editor] Cooking 'kr' strings...
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\kr.w3strings file created.
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'kr' strings!
+[2026.09.13 17:58:50][Info][Editor] Cooking 'kr' speech...
+[2026.09.13 17:58:50][Info][Core] Reachability		 35.64 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 35.91 ms
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\krpc.w3speech has not changed.
+[2026.09.13 17:58:50][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'kr' speech!
+[2026.09.13 17:58:50][Info][Core] Reachability		 34.40 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 34.67 ms
+[2026.09.13 17:58:50][Info][Editor] Cooking 'jp' strings...
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\jp.w3strings file created.
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'jp' strings!
+[2026.09.13 17:58:50][Info][Editor] Cooking 'jp' speech...
+[2026.09.13 17:58:50][Info][Core] Reachability		 34.99 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.21 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 35.27 ms
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Core] [IO]: Low level move file failed: 0x2
+[2026.09.13 17:58:50][Info][Editor] d:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\jppc.w3speech has not changed.
+[2026.09.13 17:58:50][Info][Editor] 	Voices new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] 	Lipsync new/all: 0/0 (0.00/0.00 MB)
+[2026.09.13 17:58:50][Info][Editor] Done cooking 'jp' speech!
+[2026.09.13 17:58:50][Info][Core] Reachability		 36.09 ms
+[2026.09.13 17:58:50][Info][Core] Collecting unreachables 0.23 ms
+[2026.09.13 17:58:50][Info][Core] GC 100368->100368, 322 roots, 36.36 ms
+[2026.09.13 17:58:50][Info][Editor] ModCooker: Step CompileSpeech has been started!
+[2026.09.13 17:58:50][Info][Editor] ModCooker: Step CompileSpeech has finished!
+[2026.09.13 17:58:50][Info][Editor] ModCooker: Step VerifyAndCopy has been started!
+[2026.09.13 17:58:50][Info][Editor] ModCooker: Step VerifyAndCopy has finished!
+[2026.09.13 17:58:50][Info][WCC] Loading cooker data base...
+[2026.09.13 17:58:50][Info][WCC] Parsing cooker data base...
+[2026.09.13 17:58:50][Info][WCC] Parsed 10 existing entries from cooker data base in 0.00s
+[2026.09.13 17:58:50][Info][Editor] ModCooker: Step CollisionCache has been started!
+[2026.09.13 17:58:50][Info][Editor] ModCooker: Step CollisionCache has finished!
+[2026.09.13 17:58:50][Info][WCC] Loading cooker data base...
+[2026.09.13 17:58:50][Info][WCC] Parsing cooker data base...
+[2026.09.13 17:58:50][Info][WCC] Parsed 10 existing entries from cooker data base in 0.00s
+[2026.09.13 17:58:50][Info][Editor] ModCooker: Step TextureCache has been started!
+[2026.09.13 17:58:50][Info][Editor] ModCooker: Step TextureCache has finished!
+[2026.09.13 17:58:50][Info][WCC] Compressing 'gameplay\gui_new\swf\common\componentslib.redswf'...
+[2026.09.13 17:58:50][Info][WCC] Compressing 'gameplay\gui_new\swf\common\componentslib.swf'...
+[2026.09.13 17:58:50][Error][WCC] Compression of file 'd:\games\_modding\w3modding\redkit\projects\myproject\cooked\gameplay\gui_new\swf\common\componentslib.swf' failed for some reason. Storing as uncompressed.
+[2026.09.13 17:58:50][Info][WCC] Compressing 'gameplay\gui_new\swf\inventory\panel_inventory.redswf'...
+[2026.09.13 17:58:51][Info][WCC] Compressing 'gameplay\gui_new\swf\inventory\panel_inventory.swf'...
+[2026.09.13 17:58:51][Error][WCC] Compression of file 'd:\games\_modding\w3modding\redkit\projects\myproject\cooked\gameplay\gui_new\swf\inventory\panel_inventory.swf' failed for some reason. Storing as uncompressed.
+[2026.09.13 17:58:51][Info][WCC] Bundle 'd:\games\_modding\w3modding\redkit\projects\myproject\packed\mods\modmyproject\content\blob0.bundle' saved, 4 files, 2524.00 KB of data
+[2026.09.13 17:58:51][Info][Editor] ModCooker: Step CreateBundles has been started!
+[2026.09.13 17:58:51][Info][Editor] ModCooker: Step CreateBundles has finished!
+[2026.09.13 17:58:51][Info][WCC] Loaded 1 bundles with 4 entries
+[2026.09.13 17:58:51][Info][WCC] Ignored censorship for 0 files
+[2026.09.13 17:58:51][Info][WCC] Analyzing buffers....
+[2026.09.13 17:58:51][Info][WCC] Number of buffers: 0
+[2026.09.13 17:58:51][Info][WCC] Number of files with buffers: 0
+[2026.09.13 17:58:51][Info][WCC] Max buffer ID: 0
+[2026.09.13 17:58:51][Info][Core] Found 6 directories in bundle file mapping (4 files)
+[2026.09.13 17:58:51][Info][Core] Used 0.04KB for directory names
+[2026.09.13 17:58:51][Info][Core] Used 0.00KB for file names
+[2026.09.13 17:58:51][Info][WCC] Exported 0.25 KB of text (discardable)
+[2026.09.13 17:58:51][Info][WCC] Exported 1 bundles (0.05 KB)
+[2026.09.13 17:58:51][Info][WCC] Exported 4 entries (0.10 KB)
+[2026.09.13 17:58:51][Info][WCC] Exported 4 files (0.16 KB)
+[2026.09.13 17:58:51][Info][WCC] Created 0 buffers (0.00 KB)
+[2026.09.13 17:58:51][Info][WCC] Created 0.16 KB in initialization data
+[2026.09.13 17:58:51][Info][WCC]   Bundle blob0.bundle:
+[2026.09.13 17:58:51][Info][WCC]     NumEntries: 4
+[2026.09.13 17:58:51][Info][WCC]     NumBuffers: 0
+[2026.09.13 17:58:51][Info][WCC]     NumResources: 4 (0 owning buffers)
+[2026.09.13 17:58:51][Info][WCC]     TotalDataSize: 2510.47 KB
+[2026.09.13 17:58:51][Info][WCC]     BurstDataSize: 2522.72 KB
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC] -- Per extension stats for normal files
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC]    redswf: 2 files, 4.50 MB -> 1.09 MB (ratio: 0.242)
+[2026.09.13 17:58:51][Info][WCC]    swf: 2 files, 1.36 MB -> 1.36 MB (ratio: 1.000)
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC] -- Compression statistics for redswf
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC]   lz4hc: 2 files, 4.50MB -> 1.09MB (ratio: 0.242)
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC] -- Compression statistics for swf
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC]    none: 2 files, 1.36MB -> 1.36MB (ratio: 1.000)
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC] -- Per extension stats for buffer files
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC] -- Compression statistics for totals
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Info][WCC]    none: 2 files, 1.36MB -> 1.36MB (ratio: 1.000)
+[2026.09.13 17:58:51][Info][WCC]   lz4hc: 2 files, 4.50MB -> 1.09MB (ratio: 0.242)
+[2026.09.13 17:58:51][Info][WCC] -------------------------------------------------------
+[2026.09.13 17:58:51][Error][Editor] Could not remove directory: 'd:\games\_modding\w3modding\redkit\projects\myproject\packed\dlc\'
+[2026.09.13 17:58:51][Info][Editor] ModCooker: Step CreateMetadataStores has been started!
+[2026.09.13 17:58:51][Info][Editor] ModCooker: Step CreateMetadataStores has finished!

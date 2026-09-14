@@ -10,9 +10,9 @@
   - Add a new sorting dialog item named `Price / Weight`.
   - First implementation can use plain English text without localization.
   - Confirm behavior for zero-weight and zero-price items.
+- [ ] Add Ukrainian localization for `Price / Weight` and `N/A` when available.
 - [x] Add localization for `Price / Weight` and `N/A`.
   - English
-  - Ukrainian
   - Polish
   - French
   - Italian
@@ -29,22 +29,22 @@
   - Simplified Chinese
   - Spanish - Latin America
   - Russian
-- [ ] Create `CHANGELOG.md`.
-- [ ] Create `README.md`.
+- [x] Create `CHANGELOG.md`.
+- [x] Create `README.md`.
   - Description.
   - Screenshots.
   - Install/uninstall notes.
   - Compatibility notes.
   - Links to Nexus Mods and Steam Workshop after publication.
-- [ ] Learn how to make video with text and zoom effects.
-- [ ] Create a tutorial video for the mod.
-- [ ] Prepare Nexus Mods release.
+- [x] Learn how to make video with text and zoom effects.
+- [x] Create a tutorial video for the mod.
+- [x] Prepare Nexus Mods release.
   - Add polished screenshots.
   - Write description.
   - Add install/uninstall instructions.
   - Add compatibility notes.
   - Upload and test the downloaded release package.
-- [ ] Prepare Steam Workshop release.
+- [x] Prepare Steam Workshop release.
   - Add polished screenshots.
   - Write description.
   - Add install/uninstall instructions.
@@ -60,6 +60,7 @@
 
 ## Nice To Have
 
-- [ ] Revisit the `Price / Weight` icon design.
-- [ ] Add a small developer note about the Flash font embedding issue and the working fix.
-- [ ] Add a release checklist for future versions.
+- [x] Revisit the `Price / Weight` icon design. (It is fine, IMO)
+- [x] Add a small developer note about the Flash font embedding issue and the working fix.
+- [x] Add a release checklist for future versions.
+- [ ] Investigate stricter visual sorting by replacing/bypassing vanilla mixed-size grid packing.
