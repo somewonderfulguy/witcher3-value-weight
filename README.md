@@ -11,7 +11,6 @@ The higher the number, the more crowns the item is worth per unit of carry weigh
 - [Nexus Mods](https://www.nexusmods.com/witcher3/mods/12874)
 - [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3801197292)
 - [YouTube demo](https://youtu.be/WvRqyfDV09Q)
-- [Local video file](media/Price-Weight-1.0-v3.mp4)
 
 ## Features
 

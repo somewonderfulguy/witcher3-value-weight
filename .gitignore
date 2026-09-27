@@ -10,3 +10,7 @@
 # Temporary files
 /tmp/
 /temp/
+
+# Video editing sources and exported demo (backed up separately)
+/media/davinci/
+/media/Price-Weight-1.0-v3.mp4
