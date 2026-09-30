@@ -41,6 +41,7 @@ package red.game.witcher3.slots
 	import scaleform.clik.interfaces.IListItemRenderer;
 	import scaleform.clik.interfaces.IScrollBar;
 	import scaleform.clik.ui.InputDetails;
+	import flash.events.TransformGestureEvent;
 
 	public class SlotsListGrid extends SlotsListBase implements IDropTarget
 	{
@@ -241,7 +242,7 @@ package red.game.witcher3.slots
 			_dropEnabled = value;
 		}
 		
-		public function applyDrop(dragData:IDragTarget):void
+		public function applyDrop( dragData:IDragTarget ) : void
 		{
 			var itemData:ItemDataStub = dragData.getDragData() as ItemDataStub;
 			var sourceRenderer:IInventorySlot = dragData as IInventorySlot;
@@ -275,7 +276,7 @@ package red.game.witcher3.slots
 			var targetIdx:int;
 			if (_currentDropRenderer.isEmpty())
 			{
-				targetIdx = getDropIndex(itemData.gridSize);
+				targetIdx = getDropIndex( dragData.x, dragData.y, itemData.gridSize );
 			}
 			else
 			{
@@ -343,12 +344,12 @@ package red.game.witcher3.slots
 		
 		protected var _currentDropRenderer:IInventorySlot;
 		
-		public function processOver(avatar:SlotDragAvatar):int
+		public function processOver( avatar : SlotDragAvatar ) : int
 		{
 			var currentDragIcon:int = SlotDragAvatar.ACTION_NONE;
 			var showGridHighlighting:Boolean = false;
 			
-			trace("GFX ---- processOver -----");
+			//trace("GFX ---- processOver -----");
 			
 			if (avatar)
 			{
@@ -361,18 +362,18 @@ package red.game.witcher3.slots
 					_highlightIndicator = new IndicatorClassRef() as MovieClip;
 					_highlightCanvas.addChild(_highlightIndicator);
 				}
-				
+
 				var gridSize:int = avatar.data.gridSize;
-				var dropInx:int = getDropIndex(gridSize);
+				var dropIdx:int = getDropIndex( avatar.x, avatar.y, gridSize );
 				
-				if (dropInx < 0 || dropInx > _renderers.length)
+				if (dropIdx < 0 || dropIdx > _renderers.length)
 				{
 					// invalid target
 					_currentDropRenderer = null;
 					return SlotDragAvatar.ACTION_NONE;
 				}
 				
-				var targetRenderer:IInventorySlot = _renderers[dropInx] as IInventorySlot;
+				var targetRenderer:IInventorySlot = _renderers[dropIdx] as IInventorySlot;
 				
 				_currentDropRenderer = targetRenderer;
 				
@@ -446,7 +447,7 @@ package red.game.witcher3.slots
 					if (_currentDropRenderer != null && gridSize > 1)
 					{
 						
-						var linkIdx:int = dropInx + _columns;
+						var linkIdx:int = dropIdx + _columns;
 						while (linkIdx > _renderers.length) addRow();
 						var linkedRenderer:IInventorySlot = _renderers[linkIdx] as IInventorySlot;
 						
@@ -571,11 +572,13 @@ package red.game.witcher3.slots
 			return _currentDropRenderer;
 		}
 
-		protected function getDropIndex(gridSize : int = 1):int
+		private function getDropIndex( stageX : Number, stageY : Number, gridSize : int = 1 ):int
 		{
-			var targetCol:int = Math.min(_columns -1,  Math.ceil(mouseX / gridSquareSize) - 1);
+			var localPoint : Point = globalToLocal( new Point( stageX, stageY ) );
+
+			var targetCol:int = Math.min(_columns -1,  Math.ceil(localPoint.x / gridSquareSize) - 1);
 			var yOffset:int = gridSize == 2 ? gridSquareSize / 2 : 0;
-			var targetRow:int = Math.ceil((mouseY -  yOffset + _offset) / gridSquareSize) - 1;
+			var targetRow:int = Math.ceil((localPoint.y -  yOffset + _offset) / gridSquareSize) - 1;
 			var targetIdx:int = targetCol + (targetRow * _columns);
 			
 			if (targetIdx > -1 && targetIdx < _renderers.length)
@@ -762,7 +765,7 @@ package red.game.witcher3.slots
 			
 			for each (var moreDataStub in itemsList)
 			{
-				appendItemData(moreDataStub, InputManager.getInstance().isGamepad());
+				appendItemData(moreDataStub, !InputManager.getInstance().isMouse());
 			}
 
 			if (_specialCachedSelection != -1)
@@ -816,7 +819,7 @@ package red.game.witcher3.slots
 			if (dataStub)
 			{
 				removeItemData(dataStub.id);
-				populateItemData(dataStub, !InputManager.getInstance().isGamepad(), ignoreCollisions);
+				populateItemData(dataStub, InputManager.getInstance().isMouse(), ignoreCollisions);
 				removeUselessRows();
 			}
 		}
@@ -834,6 +837,20 @@ package red.game.witcher3.slots
 			}
 			removeUselessRows();
 			return targetIndex;
+		}
+
+		public function removeAllItemData():void
+		{
+			for(var targetIndex : int = _renderers.length - 1; targetIndex >= 0; targetIndex--)
+			{
+				var targetRenderer:IInventorySlot = _renderers[targetIndex] as IInventorySlot;
+				removeUplinks(targetRenderer);
+				targetRenderer.cleanup();
+				targetRenderer.data = null;
+				_renderersCount--;
+			}
+			removeUselessRows();
+			_renderersCount = 0;
 		}
 
 		// Warning: only 2-cells items support
@@ -860,8 +877,8 @@ package red.game.witcher3.slots
 				
 				// ignoreNextGridPosition is used for when we trigger sorting
 				
-				var isGamepad:Boolean = InputManager.getInstance().isGamepad();
-				var gridPositionsMatter:Boolean = !isGamepad && !ignoreNextGridPosition;
+				var isMouse:Boolean = InputManager.getInstance().isMouse();
+				var gridPositionsMatter:Boolean = isMouse && !ignoreNextGridPosition;
 				var oldSelection = selectedIndex;
 				
 				if (gridPositionsMatter)
@@ -892,7 +909,7 @@ package red.game.witcher3.slots
 					_renderers.push(spawnRenderer(_renderers.length));
 				}
 				
-				if ( isGamepad )
+				if ( !isMouse )
 				{
 					// gpad only
 					
@@ -1184,18 +1201,12 @@ package red.game.witcher3.slots
 		
 		protected function inventorySorter_Price(element1:ItemDataStub, element2:ItemDataStub):Number
 		{
-			if (element1.isNew && !element2.isNew)
+			var price1:Number = getPriceSortValue(element1);
+			var price2:Number = getPriceSortValue(element2);
+
+			if (price1 != price2)
 			{
-				return -1;
-			}
-			else if (!element1.isNew && element2.isNew)
-			{
-				return 1;
-			}
-			
-			if (element1.price != element2.price)
-			{
-				return element2.price - element1.price;
+				return price2 - price1;
 			}
 			
 			return inventorySorter_Type(element1, element2);
@@ -1257,49 +1268,83 @@ package red.game.witcher3.slots
 			
 			return inventorySorter_Type(element1, element2);
 		}
-
+		
 		protected function inventorySorter_ValueWeight(element1:ItemDataStub, element2:ItemDataStub):Number
 		{
-			var valueWeight1:Number;
-			var valueWeight2:Number;
-			
-			if (element1.isNew && !element2.isNew)
+			var weight1:Number = getValueWeightWeight(element1);
+			var weight2:Number = getValueWeightWeight(element2);
+			var weighted1:Boolean = weight1 > 0;
+			var weighted2:Boolean = weight2 > 0;
+			var value1:Number;
+			var value2:Number;
+
+			// Zero-value items remain in the weighted group. Weightless items follow it.
+			if (weighted1 != weighted2)
 			{
-				return -1;
+				return weighted1 ? -1 : 1;
 			}
-			else if (!element1.isNew && element2.isNew)
+
+			value1 = weighted1 ? getValueWeightRatio(element1) : getValueWeightPrice(element1);
+			value2 = weighted2 ? getValueWeightRatio(element2) : getValueWeightPrice(element2);
+
+			if (value1 != value2)
 			{
-				return 1;
+				return value2 - value1;
 			}
-			
-			valueWeight1 = getValueWeightRatio(element1);
-			valueWeight2 = getValueWeightRatio(element2);
-			
-			if (valueWeight1 != valueWeight2)
+
+			if (weighted1 && value1 == 0 && weight1 != weight2)
 			{
-				return valueWeight2 - valueWeight1;
+				return weight2 - weight1;
 			}
-			
-			return inventorySorter_Type(element1, element2);
+
+			// A fixed tie-breaker keeps equal displayed ratios stable when new-item flags change.
+			return element1.id - element2.id;
 		}
-		
+
+		protected function getPriceSortValue(element:ItemDataStub):Number
+		{
+			// Preserve ordinary Price sorting by stack total, using the tooltip's modified price.
+			if (!isNaN(element.valueWeightPrice))
+			{
+				return element.valueWeightPrice * Math.max(1, element.quantity);
+			}
+			return element.price;
+		}
+
+		protected function getValueWeightPrice(element:ItemDataStub):Number
+		{
+			if (!isNaN(element.valueWeightPrice))
+			{
+				return Math.max(0, element.valueWeightPrice);
+			}
+			// Compatibility fallback for data providers without the WitcherScript wrapper.
+			return Math.max(0, element.price / Math.max(1, element.quantity));
+		}
+
+		protected function getValueWeightWeight(element:ItemDataStub):Number
+		{
+			if (!isNaN(element.valueWeightWeight))
+			{
+				return element.valueWeightWeight;
+			}
+			return Math.round(element.weight * 100) / 100;
+		}
+
 		protected function getValueWeightRatio(element:ItemDataStub):Number
 		{
-			var weight:Number = Math.round(element.weight * 100) / 100;
-			
+			if (!isNaN(element.valueWeightRatio))
+			{
+				return element.valueWeightRatio;
+			}
+
+			var weight:Number = getValueWeightWeight(element);
 			if (weight > 0)
 			{
-				return element.price / weight;
+				return Math.round(getValueWeightPrice(element) / weight * 100) / 100;
 			}
-			
-			if (element.price > 0)
-			{
-				return Number.MAX_VALUE;
-			}
-			
 			return 0;
 		}
-		
+
 		protected function tryRestoreItemPosition(targetDataStub:ItemDataStub):int
 		{
 			if (_cachedItemPositions)
@@ -1373,15 +1418,13 @@ package red.game.witcher3.slots
 		
 		protected function isItemPlaceValid(rendererIdx:int, size:int, sectionId:int = -1 ):Boolean
 		{
+			//Section check : check if the rendererIdx is in the provided section (sections are column ranges)
 			if (sectionId != -1)
 			{
 				var targetSection:ItemSectionData = getItemSection(sectionId);
-				
 				if (targetSection)
 				{
-					
-					var curColumn:int = getColumn(rendererIdx);
-					
+					var curColumn:int = getColumn(rendererIdx);	
 					if (curColumn < targetSection.start || curColumn > targetSection.end)
 					{
 						return false;
@@ -1389,18 +1432,19 @@ package red.game.witcher3.slots
 				}
 			}
 			
+			// If its out of bounds, the renderer doesnt exist yet and therefore has to be empty (We can just always add more rows)
 			if (rendererIdx >= _renderers.length)
 			{
 				return true;
 			}
 			
 			var renderer:SlotBase = _renderers[rendererIdx] as SlotBase;
-			
-			if (renderer.isEmpty() && (renderer as IInventorySlot).uplink == null)
+			if (renderer.isEmpty() && (renderer as IInventorySlot).uplink == null)	//uplink == linked block for 1x2
 			{
 				if (size > 1) // right now the only other size is 2 (and its always 1 down).... soooo ya haha
 				{
 					var downIndex = rendererIdx + _columns;
+					//We dont have to check uplink here, since items are either 1x1 or 1x2. So we cannot collide an uplink for a 1x2, only with the 1x2 starter block
 					if (downIndex >= _renderers.length || _renderers[downIndex].isEmpty()) // If its out of bounds, the renderer doesnt exist yet and therefore has to be empty
 					{
 						return true;
@@ -1655,6 +1699,8 @@ package red.game.witcher3.slots
 			return _renderBounds;
 		}
 
+		//Creates a renderer, inits the listeners and adds it to the canvas, sets its position (based on index).
+		//Uses pooling if _discardedRendererPool has discarded ones, it avoids creation
 		private function spawnRenderer(index:uint):IInventorySlot
 		{
 			var newRenderer:IInventorySlot;
@@ -1684,6 +1730,7 @@ package red.game.witcher3.slots
 			return newRenderer;
 		}
 
+		//Calculates the renderers position from the index and paddings and sets the renderers position
 		private function repositionRenderer(index:int, renderer:IInventorySlot)
 		{
 			var rendererColumn:int = getColumn( index );
@@ -1710,6 +1757,28 @@ package red.game.witcher3.slots
 					renderer.cleanup();
 			}
 			_renderersCount = 0;
+		}
+
+		// Only validates renderes that have no successfully setup their data yet
+		protected function validateRenderersSpecial():void
+		{
+			var currentRenderer:SlotBase;
+			var minRowsValidAtStart:int = _numRowsVisible * _columns;
+			
+			for (var i = 0; i < _renderers.length; ++i)
+			{
+				currentRenderer = _renderers[i] as SlotBase;
+				
+				if (currentRenderer && currentRenderer.awaitingCompleteValidation)
+				{
+					currentRenderer.validateNow();
+					
+					if (i <= minRowsValidAtStart && currentRenderer && currentRenderer.awaitingCompleteValidation)
+					{
+						currentRenderer.forceValidateNow();
+					}
+				}
+			}
 		}
 
 		 /*
@@ -1750,28 +1819,6 @@ package red.game.witcher3.slots
 
 			m_lastScrollPosition = _scrollBar.position;*/
         }
-		
-		// Only validates renderes that have no successfully setup their data yet
-		protected function validateRenderersSpecial():void
-		{
-			var currentRenderer:SlotBase;
-			var minRowsValidAtStart:int = _numRowsVisible * _columns;
-			
-			for (var i = 0; i < _renderers.length; ++i)
-			{
-				currentRenderer = _renderers[i] as SlotBase;
-				
-				if (currentRenderer && currentRenderer.awaitingCompleteValidation)
-				{
-					currentRenderer.validateNow();
-					
-					if (i <= minRowsValidAtStart && currentRenderer && currentRenderer.awaitingCompleteValidation)
-					{
-						currentRenderer.forceValidateNow();
-					}
-				}
-			}
-		}
 
 		/*protected function handleTweenComplete(curTween:GTween):void
 		{
@@ -1791,6 +1838,27 @@ package red.game.witcher3.slots
 				{
 					_scrollBar.position += CommonConstants.INVENTORY_GRID_SIZE;
 				}
+			}
+		}
+
+		public function enableScrollWithPan( enable : Boolean ) : void
+		{
+			if (enable)
+			{
+				addEventListener( TransformGestureEvent.GESTURE_PAN, onGesturePan, false, 0, true );
+			}
+			else
+			{
+				removeEventListener( TransformGestureEvent.GESTURE_PAN, onGesturePan );
+			}
+		}
+
+		protected function onGesturePan( event : TransformGestureEvent ) : void
+		{
+			var dragInProgress : Boolean = SlotsTransferManager.getInstance().isDragging();
+			if ( !dragInProgress && _maxOffset > 0 )
+			{
+				_scrollBar.position -= event.offsetY;
 			}
 		}
 
@@ -1841,6 +1909,21 @@ package red.game.witcher3.slots
 				_scrollBar.validateNow();
 			}
 		}
+
+		private function dbgDumpUplinks():void
+		{
+			trace("SlotsListGrid::dbgDumpUplinks ----------------------------------------------------------- " );
+			var len:int = _renderers.length;
+			for (var i:int = 0; i < len; i++)
+			{
+				var curItem:IInventorySlot = _renderers[i] as IInventorySlot;
+				if ( curItem.uplink )
+				{
+					trace("SlotsListGrid::dbgDumpUplinks : ", curItem );
+				}
+			}
+			trace("SlotsListGrid::dbgDumpUplinks ----------------------------------------------------------- " );
+		}
 		
 		override public function handleInputNavSimple(event:InputEvent):void
 		{
@@ -1853,6 +1936,15 @@ package red.game.witcher3.slots
 			var result:Boolean = false;
 			var isRStick:Boolean = details.navEquivalent == NavigationCode.RIGHT_STICK_LEFT || details.navEquivalent == NavigationCode.RIGHT_STICK_RIGHT;
 			
+			//DEBUG
+			/*
+			if ( details.navEquivalent == NavigationCode.HOME && event.details.value == InputValue.KEY_DOWN )
+			{
+				dbgDumpUplinks();
+			}
+			*/
+			//DEBUG
+
 			if (_itemSectionsList && _itemSectionsList.length > 0 && isRStick && (event.details.value != InputValue.KEY_UP))
 			{
 				var selectedRenderer:IBaseSlot = getSelectedRenderer() as IBaseSlot;

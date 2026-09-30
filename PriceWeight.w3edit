@@ -1,8 +1,8 @@
 {
-    "name": "PriceWeight",
+    "name": "priceweight",
     "modName": "PriceWeight",
     "version": "1.0",
-    "gameVersion": "",
+    "gameVersion": "29",
     "description": "Adds a Price / Weight value to item tooltips and a matching inventory sort option, helping you find the most valuable loot per unit of carry weight.",
     "thumbnail": "D:\\Games\\_Modding\\W3modding\\RedKit\\projects\\witcher3-value-weight\\media\\price-value.png",
     "author": "somewonderfulguy",
@@ -10,6 +10,7 @@
     "workshopId": 3801197292,
     "succesfullyCooked": true,
     "dependencies": [],
+    "useLooseScripts": false,
     "excludedDlc": [
         "dlc1",
         "dlc2",
