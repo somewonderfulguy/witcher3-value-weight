@@ -65,6 +65,8 @@ package red.game.witcher3.slots
 		protected var _specialCachedSelection:int = -1;
 		
 		protected var _lastSetSort:int = -1;
+		// Per-section boundary used only while laying out a fresh Price / Weight sort.
+		protected var _valueWeightGroupEndRows:Object;
 		
 		protected static const ITEM_PADDING:Number = 4;
 		protected var _maxOffset:Number = 0;
@@ -879,7 +881,22 @@ package red.game.witcher3.slots
 				
 				var isMouse:Boolean = InputManager.getInstance().isMouse();
 				var gridPositionsMatter:Boolean = isMouse && !ignoreNextGridPosition;
+				// Sorting clears all saved positions. The refreshed data can arrive after
+				// a redraw has already consumed ignoreNextGridPosition.
+				if (gridPositionsMatter && _lastSetSort == MenuInventory.INV_SORT_MODE_VALUE_WEIGHT)
+				{
+					gridPositionsMatter = false;
+					for each (var positionedItem:ItemDataStub in _data)
+					{
+						if (positionedItem.gridPosition >= 0)
+						{
+							gridPositionsMatter = true;
+							break;
+						}
+					}
+				}
 				var oldSelection = selectedIndex;
+				_valueWeightGroupEndRows = !gridPositionsMatter && _lastSetSort == MenuInventory.INV_SORT_MODE_VALUE_WEIGHT ? {} : null;
 				
 				if (gridPositionsMatter)
 				{
@@ -967,6 +984,13 @@ package red.game.witcher3.slots
 						
 						if (targetList)
 						{
+							// Do not let weightless items fill gaps alongside the weighted group.
+							var groupStartRow:int = getValueWeightGroupStartRow(targetDataStub);
+							for (k = 0; k < targetList.length; k++)
+							{
+								targetList[k] = Math.max(targetList[k], groupStartRow);
+							}
+
 							var len:int = targetList.length;
 							var minColumnIdx  : int = 0;
 							var minColumnSize : int = targetList[0];
@@ -1003,6 +1027,7 @@ package red.game.witcher3.slots
 							//trace("GFX place; targetIdx:  ", targetIdx, "; ", targetDataStub.gridSize);
 							
 							targetDataStub.gridPosition = targetIdx;
+							recordValueWeightGroupEnd(targetDataStub);
 							rendererInstance.data = targetDataStub;
 							
 							++_renderersCount;
@@ -1065,6 +1090,9 @@ package red.game.witcher3.slots
 				//_initFindSelection = true;
 			}
 			
+			// Saved mouse positions and manual drag/drop continue using vanilla placement.
+			_valueWeightGroupEndRows = null;
+
 			if (_initFindSelection || oldSelection == -1)
 			{
 				findSelection();
@@ -1345,6 +1373,25 @@ package red.game.witcher3.slots
 			return 0;
 		}
 
+		protected function getValueWeightGroupStartRow(element:ItemDataStub):int
+		{
+			if (!_valueWeightGroupEndRows || getValueWeightWeight(element) > 0)
+			{
+				return 0;
+			}
+			return int(_valueWeightGroupEndRows[element.sectionId]);
+		}
+
+		protected function recordValueWeightGroupEnd(element:ItemDataStub):void
+		{
+			if (_valueWeightGroupEndRows && getValueWeightWeight(element) > 0)
+			{
+				// Include the bottom cell of 1x2 items, even if a later 1x1 item fits above it.
+				var endRow:int = Math.floor(element.gridPosition / _columns) + element.gridSize;
+				_valueWeightGroupEndRows[element.sectionId] = Math.max(int(_valueWeightGroupEndRows[element.sectionId]), endRow);
+			}
+		}
+
 		protected function tryRestoreItemPosition(targetDataStub:ItemDataStub):int
 		{
 			if (_cachedItemPositions)
@@ -1398,6 +1445,7 @@ package red.game.witcher3.slots
 			}
 			
 			rendererInstance.data = targetDataStub;
+			recordValueWeightGroupEnd(targetDataStub);
 			++_renderersCount;
 			
 			if (targetDataStub.gridSize > 1)
@@ -1591,8 +1639,9 @@ package red.game.witcher3.slots
 		{
 			var len:uint = _renderers.length;
 			var reqSize:uint = targetDataStub.gridSize;
+			var startIdx:int = getValueWeightGroupStartRow(targetDataStub) * _columns;
 
-			for (var i:int = 0; i < len; i++)
+			for (var i:int = startIdx; i < len; i++)
 			{
 				if (isItemPlaceValid(i, targetDataStub.gridSize, targetDataStub.sectionId))
 				{
