@@ -1,0 +1,76 @@
+MOD.IO
+======
+
+Form: https://mod.io/g/the-witcher-3/m/add/
+
+
+STEP 1 - MOD PROFILE
+--------------------
+
+Mod name:
+Price-Weight - Inventory Tooltip and Sorting
+
+Summary:
+Adds a Price / Weight value to item tooltips and a matching inventory sort option, helping you find the most valuable loot per unit of carry weight.
+
+Homepage:
+https://www.nexusmods.com/witcher3/mods/12874
+
+Profile URL:
+https://mod.io/g/the-witcher-3/m/price-weight
+
+Community:
+[x] Allow comments
+[ ] Allow dependants
+[x] Allow to be added to collections
+
+Contains mature content:
+[ ] Alcohol  [ ] Drugs  [ ] Violence  [ ] Explicit
+
+Mod listing image (16:9, min 512x288, max 8MB):
+media/price-value.png (668x376)
+
+
+DESCRIPTION
+-----------
+In the Description editor, click the source code button (<>, last icon in
+the toolbar), paste everything between the lines, then switch back.
+
+------------------------------------------------------------------------
+<p><strong>Price / Weight</strong> adds a value-to-weight ratio to item tooltips and a matching option to the inventory sorting menu.</p>
+<p>The higher the number, the more crowns the item is worth per unit of carry weight. This makes it easier to decide what to keep, sell, or drop without doing the math yourself.</p>
+<p><a href="https://youtu.be/NEW_VIDEO_ID">Watch the demo on YouTube</a></p>
+
+<h2>Features</h2>
+<ul>
+<li>Displays <strong>Price / Weight</strong> in item tooltips.</li>
+<li>Adds <strong>Price / Weight</strong> to the inventory sorting menu.</li>
+<li>Sorts items with the highest ratio first.</li>
+<li>Lists weightless items after all weighted items.</li>
+<li>Localized for every language supported by The Witcher 3.</li>
+</ul>
+
+<h2>Calculation</h2>
+<p>Price / Weight = displayed price ÷ displayed weight</p>
+<p>Example: 1772 ÷ 2.04 = 868.63</p>
+
+<h2>Compatibility</h2>
+<p>This mod changes the inventory tooltip and inventory sorting interface files. If another mod changes the same inventory interface, only one mod's version can be active, and a compatibility patch may be required.</p>
+
+<h2>Installation</h2>
+<p>Subscribe to the mod. It downloads and installs automatically.</p>
+
+<h2>Uninstallation</h2>
+<p>Unsubscribe from the mod.</p>
+------------------------------------------------------------------------
+
+
+STEP 2 - ADD MEDIA
+------------------
+Images:  media/example-1.jpg, media/example-2.jpg (both 1920x1080)
+YouTube: https://youtu.be/NEW_VIDEO_ID
+
+
+STEP 3 - DEPENDENCIES
+---------------------
+None.

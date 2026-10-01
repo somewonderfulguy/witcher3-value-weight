@@ -434,7 +434,7 @@
 						   { key:"WeightSort", label:thirdSortString, isChecked:(value == INV_SORT_MODE_WEIGHT) },
 						   { key:"DurabilitySort", label:forthSortString, isChecked:(value == INV_SORT_MODE_DURABILTIY) },
 						   { key:"RaritySort", label:fifthSortString, isChecked:(value == INV_SORT_MODE_RARITY) },
-						   { key:"ValueWeightSort", label:"Price / Weight", isChecked:(value == INV_SORT_MODE_VALUE_WEIGHT) } ];
+						   { key:"ValueWeightSort", label:"[[mod_valueweight_price_weight]]", isChecked:(value == INV_SORT_MODE_VALUE_WEIGHT) } ];
 			
 			mcPlayerInventory.mcPlayerGrid.setCurrentSort(currentSortingMode);
 			

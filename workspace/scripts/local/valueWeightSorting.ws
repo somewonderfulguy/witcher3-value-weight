@@ -1,4 +1,4 @@
-@wrapMethod(W3GuiPlayerInventoryComponent)
+﻿@wrapMethod(W3GuiPlayerInventoryComponent)
 function SetInventoryFlashObjectForItem(itemId : SItemUniqueId, out flashObject : CScriptedFlashObject) : void
 {
 	var itemPrice : int;

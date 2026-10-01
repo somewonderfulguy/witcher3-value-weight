@@ -1,0 +1,43 @@
+STEAM WORKSHOP
+==============
+
+Steam Workshop uses Steam BBCode: [h1]-[h3], [b], [list], [olist], [url], [hr].
+It does not support [color], [size], or embedded YouTube players.
+Add the Remastered video from "Add/edit images & videos" instead:
+https://youtu.be/NEW_VIDEO_ID
+
+
+TITLE
+-----
+Price-Weight - Inventory Tooltip and Sorting
+
+
+DESCRIPTION (paste everything between the lines)
+------------------------------------------------------------------------
+[b]Price / Weight[/b] adds a value-to-weight ratio to item tooltips and a matching option to the inventory sorting menu.
+
+The higher the number, the more crowns the item is worth per unit of carry weight. This makes it easier to decide what to keep, sell, or drop without doing the math yourself.
+
+[h2]Features[/h2]
+[list]
+[*]Displays [b]Price / Weight[/b] in item tooltips.
+[*]Adds [b]Price / Weight[/b] to the inventory sorting menu.
+[*]Sorts items with the highest ratio first.
+[*]Lists weightless items after all weighted items.
+[*]Localized for every language supported by The Witcher 3.
+[/list]
+
+[h2]Calculation[/h2]
+Price / Weight = displayed price ÷ displayed weight
+
+Example: 1772 ÷ 2.04 = 868.63
+
+[h2]Compatibility[/h2]
+This mod changes the inventory tooltip and inventory sorting interface files. If another mod changes the same inventory interface, only one mod's version can be active, and a compatibility patch may be required.
+
+[h2]Installation[/h2]
+Subscribe. Steam downloads and installs the mod automatically.
+
+[h2]Uninstallation[/h2]
+Unsubscribe.
+------------------------------------------------------------------------

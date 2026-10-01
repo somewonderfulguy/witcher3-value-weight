@@ -4,7 +4,13 @@ All notable user-facing changes to this mod are documented here.
 
 ## [Unreleased]
 
-- No unreleased changes yet.
+### Version 2.0 — Remastered
+
+- Restored tooltip and inventory sorting support for Remastered.
+- Fixed Price / Weight ordering and ordinary Price sorting to use the displayed item price.
+- Separated weightless items onto a fresh row below weighted items when sorting by Price / Weight, including grids with mixed item sizes.
+- Show `0` for zero-price weighted items and hide the ratio for weightless items.
+- Restored localization for all 18 supported languages, including Ukrainian.
 
 ## [1.0.0] - 2026-09-13
 
