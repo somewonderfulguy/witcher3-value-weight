@@ -22,7 +22,7 @@ DESCRIPTION (paste everything between the lines)
 
 [color=#D4D4D8]The higher the number, the more crowns the item is worth per unit of carry weight - making it easier to decide what to keep, sell, or drop without doing the math yourself.[/color]
 
-[youtube]NEW_VIDEO_ID[/youtube]
+[youtube]pxSG0zXrIO8[/youtube]
 
 [size=4][b]FEATURES[/b][/size]
 [list]
@@ -43,9 +43,9 @@ Example: 1772 ÷ 2.04 = 868.63[/color]
 [size=4][b]INSTALLATION[/b][/size]
 [list=1]
 [*]Extract the downloaded archive.[/*]
-[*]Copy the [b]modpriceweight[/b] folder into your [b]The Witcher 3\Mods[/b] directory.[/*]
+[*]Copy the [b]modPriceWeight[/b] folder into your [b]The Witcher 3\Mods[/b] directory.[/*]
 [/list]
 
 [size=4][b]UNINSTALLATION[/b][/size]
-Remove the [b]modpriceweight[/b] folder from your [b]Mods[/b] directory.
+Remove the [b]modPriceWeight[/b] folder from your [b]Mods[/b] directory.
 ------------------------------------------------------------------------

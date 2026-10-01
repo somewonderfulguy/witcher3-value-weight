@@ -4,7 +4,7 @@ STEAM WORKSHOP
 Steam Workshop uses Steam BBCode: [h1]-[h3], [b], [list], [olist], [url], [hr].
 It does not support [color], [size], or embedded YouTube players.
 Add the Remastered video from "Add/edit images & videos" instead:
-https://youtu.be/NEW_VIDEO_ID
+https://youtu.be/pxSG0zXrIO8
 
 
 TITLE

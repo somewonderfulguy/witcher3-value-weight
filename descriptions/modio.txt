@@ -39,7 +39,7 @@ the toolbar), paste everything between the lines, then switch back.
 ------------------------------------------------------------------------
 <p><strong>Price / Weight</strong> adds a value-to-weight ratio to item tooltips and a matching option to the inventory sorting menu.</p>
 <p>The higher the number, the more crowns the item is worth per unit of carry weight. This makes it easier to decide what to keep, sell, or drop without doing the math yourself.</p>
-<p><a href="https://youtu.be/NEW_VIDEO_ID">Watch the demo on YouTube</a></p>
+<p><a href="https://youtu.be/pxSG0zXrIO8">Watch the demo on YouTube</a></p>
 
 <h2>Features</h2>
 <ul>
@@ -67,8 +67,8 @@ the toolbar), paste everything between the lines, then switch back.
 
 STEP 2 - ADD MEDIA
 ------------------
-Images:  media/example-1.jpg, media/example-2.jpg (both 1920x1080)
-YouTube: https://youtu.be/NEW_VIDEO_ID
+Images:  media/example-1.jpg, media/example-2.jpg (both 2560x1440)
+YouTube: https://youtu.be/pxSG0zXrIO8
 
 
 STEP 3 - DEPENDENCIES

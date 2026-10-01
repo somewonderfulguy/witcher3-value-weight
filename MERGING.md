@@ -1,75 +1,55 @@
-# Merge and Compatibility Notes
+# Compatibility and Source Integration Notes
 
-This mod changes the inventory tooltip and inventory sorting UI. If you use other inventory UI mods, run Script Merger after installing or updating mods.
+Version 2.0 targets Remastered and ships precompiled scripts plus compiled Flash assets. A standalone installation does not require Script Merger. Combining it with another inventory mod can still require a compatibility patch.
 
-## Files Changed By This Mod
+## Current Package
 
-Script conflict:
+`PriceWeight.w3edit` sets `useLooseScripts` to `false`. The inspected packed output contains `content/precompiled.rsblob`, with no loose `content/scripts` directory.
 
-```text
-scripts\game\gui\_old\components\guiTooltipComponent.ws
-```
+| Component | Implementation | Compatibility boundary |
+| --- | --- | --- |
+| Tooltip data | Edited `W3TooltipComponent` in `scripts/game/gui/_old/components/guiTooltipComponent.ws` | Includes direct changes to vanilla methods; it is not entirely implemented with annotations. |
+| Sorting data | `scripts/local/valueWeightSorting.ws` wraps `W3GuiPlayerInventoryComponent.SetInventoryFlashObjectForItem` | Calls `wrappedMethod` and supplies displayed price, weight, and ratio to Flash. Compatible wrappers can compose, but behavior still needs testing together. |
+| Tooltip and inventory presentation | `componentslib.redswf` and `panel_inventory.redswf` | Replaces compiled UI resources. WitcherScript annotations do not merge these assets. |
 
-Compiled Flash UI conflicts:
+## Flash Asset Conflicts
 
-```text
-gameplay\gui_new\swf\common\componentslib.redswf
-gameplay\gui_new\swf\inventory\panel_inventory.redswf
-```
-
-Source files used to build the Flash UI, included only for reference in the project source:
+These resources are replaced by the mod:
 
 ```text
-gameplay\gui_new\fla\witcher3\menus\common\componentslib.fla
-gameplay\gui_new\fla\witcher3\menus\inventory\menuinventory.fla
-gameplay\gui_new\actionscript\red\game\witcher3\menus\inventory_menu\MenuInventory.as
-gameplay\gui_new\actionscript\red\game\witcher3\slots\SlotsListGrid.as
+gameplay/gui_new/swf/common/componentslib.redswf
+gameplay/gui_new/swf/inventory/panel_inventory.redswf
 ```
 
-## Script Merger
+If another mod provides the same resource, load order selects a version; it does not combine the UI changes. Losing `componentslib.redswf` can remove or break the ratio icon. Losing `panel_inventory.redswf` can remove the sorting option, sorting logic, or weightless grouping.
 
-Script Merger can detect conflicts and create merged files for text/script conflicts. For this mod, the useful merge target is:
+A compatibility patch must integrate both mods' relevant Flash/ActionScript changes and rebuild the affected assets. Script Merger cannot automatically do that.
+
+## For Players
+
+1. Install the Remastered version of this mod.
+2. Check compatibility before combining it with other inventory or tooltip mods.
+3. Use a patch built for the exact mod versions when one is available. Changing load order may select one mod's behavior while losing the other's.
+4. Check the tooltip, Price / Weight sorting, and weightless grouping in game.
+
+## For Authors Building a Compatibility Patch
+
+Source files relevant to integration:
 
 ```text
-scripts\game\gui\_old\components\guiTooltipComponent.ws
+scripts/game/gui/_old/components/guiTooltipComponent.ws
+scripts/local/valueWeightSorting.ws
+gameplay/gui_new/fla/witcher3/menus/common/componentslib.fla
+gameplay/gui_new/fla/witcher3/menus/inventory/menuinventory.fla
+gameplay/gui_new/actionscript/red/game/witcher3/menus/inventory_menu/MenuInventory.as
+gameplay/gui_new/actionscript/red/game/witcher3/slots/SlotsListGrid.as
+gameplay/gui_new/actionscript/red/game/witcher3/slots/ItemDataStub.as
 ```
 
-When merging this file, keep this mod's added `valueweight` tooltip stat near the vanilla price tooltip stat. The important additions are:
+Preserve `addValueWeightStat` and its calls after the vanilla price stat in inventory and merchant contexts. The helper uses displayed weight, keeps localization key `mod_valueweight_price_weight`, shows `0` for zero-price weighted items, and hides the ratio for weightless items. Keep the sorting wrapper and its Flash data fields as well.
 
-```text
-addGFxItemStat( propsList, "valueweight", ..., "mod_valueweight_price_weight" );
-```
+Source-level text merging can help author a combined implementation, but the result must be rebuilt and tested in the intended package. The notes recommend loose scripts on PC for traditional edited vanilla files, and annotations or minimal class extensions for precompiled mods. Switching this project's packaging or refactoring its tooltip requires a separate implementation and validation task; the current build settings have not been changed.
 
-and, for zero-weight items with a positive price:
+For future compatibility work, investigate moving the tooltip changes into small wrappers or class extensions. That may reduce script conflicts; it will not remove the separate Flash asset conflicts.
 
-```text
-GetLocStringByKeyExt( "mod_valueweight_not_applicable" )
-```
-
-If the merge keeps the script code but the icon is missing, the Flash UI conflict was not resolved in favor of this mod.
-
-## Non-Text UI Conflicts
-
-Script Merger cannot automatically merge compiled Flash UI assets such as `.redswf`. If another mod also changes either of these files, one mod's file will win by load order:
-
-```text
-gameplay\gui_new\swf\common\componentslib.redswf
-gameplay\gui_new\swf\inventory\panel_inventory.redswf
-```
-
-Effects of losing those files:
-
-- If `componentslib.redswf` is overridden by another mod, the tooltip value/weight row may show a missing/incorrect icon.
-- If `panel_inventory.redswf` is overridden by another mod, the `Price / Weight` sort option may be missing or the sort dialog may behave incorrectly.
-
-If another mod edits the same inventory Flash files, a real compatibility patch must be built from both mods' Flash/ActionScript changes. Load order alone can only choose which mod's UI file wins.
-
-## Recommended User Steps
-
-1. Install this mod.
-2. Install any other mods.
-3. Run Script Merger.
-4. Merge `guiTooltipComponent.ws` if Script Merger reports a conflict.
-5. For `.redswf` conflicts, choose the UI mod whose inventory screen you want to win, or use a compatibility patch made for the exact pair of mods.
-6. Launch the game and check an inventory tooltip and the inventory sort dialog.
-
+Preserve the font setup and run the Ukrainian exporter after the final cook, as described in [DEVELOPMENT.md](DEVELOPMENT.md).
